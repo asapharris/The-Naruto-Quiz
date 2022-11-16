@@ -9,17 +9,15 @@
     <title>The Naruto Quiz</title>
 </head>
 
+<div class="top-bar">
+    <button>View High Scores</button>
+    <p>Timer 00:00</p>
+</div>
+
 <body>
 
     <div class="outerContainer">
 
-        <div class="top-bar">
-            <button>View High Scores</button>
-            <p>Timer 00:00</p>
-        </div>
-        
-        <div class="innerContainer">
-    
         <header class="quizIntro">
             <h1>The Naruto Quiz</h1>
             <p>Welcome to The Naruto Quiz. Press Start to begin.</p>
@@ -31,10 +29,7 @@
             <section class="quizSection">
                 <h2>Insert Question Here</h2>
                 <ul>
-                    <li><button>Answer #1</button></li>
-                    <li><button>Answer #2</button></li>
-                    <li><button>Answer #3</button></li>
-                    <li><button>Answer #4</button></li>
+                    <button class="answers"></button>
                 </ul>    
             </section>
 
@@ -49,18 +44,10 @@
             </section>
 
             <section class="highScores">
-                <h2>High Scores</h2>
-                <ol>
-                    <li>Score #1</li>
-                    <li>Score #2</li>
-                    <li>Score #3</li>
-                    <li>Score #4</li>
-                </ol>
+            <ol>Scores</ol>
             </section>
 
         </main>
-
-        </div>
 
     </div>
 </body>
