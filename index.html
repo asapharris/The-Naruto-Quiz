@@ -18,38 +18,43 @@
 
     <div class="outerContainer">
 
-        <header class="quizIntro">
+        <div class="quizIntro">
             <h1>The Naruto Quiz</h1>
             <p>Welcome to The Naruto Quiz. Press Start to begin.</p>
-            <button>Start</button>
-        </header>
+            <button id="start-button">Start Game</button>
+        </div>
 
         <main>
-            
-            <section class="quizSection">
+
+            <section class="quizSection" type="hidden">
                 <h2>Insert Question Here</h2>
                 <ul>
-                    <button class="answers"></button>
-                </ul>    
+                    <button id="a">Answer</button>
+                    <button id="b">Answer</button>
+                    <button id="c">Answer</button>
+                    <button id="d">Answer</button>
+                </ul>
             </section>
 
-            <section class="quizFinish">
+            <section class="quizFinish" type="hidden">
                 <h2>Quiz Finished!</h2>
                 <p>Your Score: 00</p>
                 <form>
                     <label>Enter Initials Here:</label>
                     <input type="text">
-                    <button>Submit</button>
+                    <button id="submit-button">Submit</button>
                 </form>
             </section>
 
-            <section class="highScores">
-            <ol>Scores</ol>
+            <section class="highScores" type="hidden">
+                <ol>Scores</ol>
             </section>
 
         </main>
 
     </div>
 </body>
+
+<script rel="javascript" src="./assets/script.js"></script>
 
 </html>
