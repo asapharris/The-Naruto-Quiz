@@ -14,7 +14,7 @@ body {
     overflow: hidden;
 }
 
-.top-bar {
+#scores-bar {
     position: absolute;
     top: 0px;
     font-size: 14px;
@@ -24,16 +24,16 @@ body {
     padding: 5px;
 }    
 
-.top-bar p {
+#scores-bar p {
     position: relative;
     right: 0;
 }
 
-.outerContainer {
+#outerContainer {
     display: block;
 }
 
-.quizIntro {
+#quizIntro {
     display: block;
     text-align: center;
     border: solid black 5px;
@@ -42,29 +42,30 @@ body {
     background-color: darkslategray;
 }
 
-.quizSection {
-    display: block;
+#quiz {
+    display: none;
+}
+
+#question-title {
     text-align: center;
     border: solid black 8px;
     border-radius: 20px;
     padding: 70px 70px;
     background-color: darkslategray;
     color: white;
-    display: none;
 }
 
-.quizFinish {
-    display: block;
+#quizFinish {
     text-align: center;
     border: solid black 5px;
     border-radius: 20px;
     padding: 60px 40px;
     background-color: darkslategray;
+    color: white;
     display: none;
 }
 
-.highScores {
-    display: flex;
+#highScores {
     text-align: center;
     justify-self: center;
     border: solid black 5px;
