@@ -1,5 +1,5 @@
 var startButton = document.getElementById("start-button");
-var quizFinish = document.getElementById('quizfinish')
+var quizFinish = document.getElementById('quizFinish')
 var submitButton = document.getElementById("submit-button");
 var highScores = document.getElementById('highScores')
 var answers = document.getElementById('answers')
@@ -91,11 +91,14 @@ function chooseC() { checkAnswer(2); }
 function chooseD() { checkAnswer(3); }
 
 function endGame() {
-
+    quiz.style.display = "none"
+    answerCheck.style.display = 'block'
+    quizFinish.style.display = "block"
 }
 
-function highScores() {
-
+function scores () {
+    quizFinish.style.display = "none"
+    highScores.style.display = 'block'
 }
 
 startButton.addEventListener("click", startGame)
