@@ -9,50 +9,44 @@
     <title>The Naruto Quiz</title>
 </head>
 
-<div class="top-bar">
-    <button>View High Scores</button>
-    <p>Timer 00:00</p>
-</div>
-
 <body>
+    <header id="scores-bar">
+        <button>View High Scores</button>
+        <p>Timer 00:00</p>
+    </header>
 
-    <div class="outerContainer">
-
-        <div class="quizIntro">
+    <main id="outerContainer">
+        <section id="quizIntro">
             <h1>The Naruto Quiz</h1>
             <p>Welcome to The Naruto Quiz. Press Start to begin.</p>
             <button id="start-button">Start Game</button>
-        </div>
+        </section>
 
-        <main>
+        <section id="quiz">
+            <h2 id="question-title"></h2>
+            <ul id="answers">
+                <button id="a"></button>
+                <button id="b"></button>
+                <button id="c"></button>
+                <button id="d"></button>
+            </ul>
+            <h2 id="answer-check"></h2>
+        </section>
 
-            <section class="quizSection" type="hidden">
-                <h2>Insert Question Here</h2>
-                <ul>
-                    <button id="a">Answer</button>
-                    <button id="b">Answer</button>
-                    <button id="c">Answer</button>
-                    <button id="d">Answer</button>
-                </ul>
-            </section>
+        <section id="quizFinish">
+            <h2>Quiz Finished!</h2>
+            <p id="final-score"> </p>
+            <form>
+                <label>Enter Initials Here:</label>
+                <input id="initials" type="text">
+                <button id="submit-button">Submit</button>
+            </form>
+        </section>
 
-            <section class="quizFinish" type="hidden">
-                <h2>Quiz Finished!</h2>
-                <p>Your Score: 00</p>
-                <form>
-                    <label>Enter Initials Here:</label>
-                    <input type="text">
-                    <button id="submit-button">Submit</button>
-                </form>
-            </section>
-
-            <section class="highScores" type="hidden">
-                <ol>Scores</ol>
-            </section>
-
-        </main>
-
-    </div>
+        <section id="highScores">
+            <ol id="scores"></ol>
+        </section>
+    </main>
 </body>
 
 <script rel="javascript" src="./assets/script.js"></script>
